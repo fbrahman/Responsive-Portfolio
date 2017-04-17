@@ -1,0 +1,241 @@
+/* common on all pages */
+	/*Setting up default font styling and text colour.*/
+	body{
+		font-family: "Arial", "helvitica Neue", Helvetica, sans-serif;
+		color: #777777;
+		display: flex;
+		flex-direction: column;
+	}
+
+	header{
+		border-color: #cccccc; 
+		border-bottom-width: 3px;
+		border-style: solid;
+	}
+
+	footer{
+		clear: both;
+		background-color: #666666;
+		padding:1.75%;
+	}
+
+	h1{
+		font-size: 2em;
+	}
+
+	h2{
+		font-size: 1.5em;
+	}
+
+	h3{
+		font-size: 1.17em;
+	}
+
+	ul{
+		list-style: none;
+	}
+
+	/*navigation buttons formatting */
+
+		header nav{
+		margin-right: 2%;	
+		}
+
+		header nav ul li{
+			display: inline-block;
+			/* padding: 5px; */
+		}
+
+		header nav ul li a:link{
+			color: #777777;
+			text-decoration: none;
+		}
+
+		header nav ul li a:visited{
+			color: #777777;
+			text-decoration: none;
+		}
+
+		header nav ul li a:hover{
+			text-decoration: underline;
+			font-weight: bold;
+		}
+
+		/*Navigation separators with using border*/
+		/*header nav ul li+li {
+			border-left: 1px solid #000000
+		}*/
+
+		/*Navigation separators using symbol*/
+		header nav ul li:not(:first-child):before {
+		    content: " | ";
+		}
+
+
+	/*wrapper for all content exclusive from body and .main inclusive of header and footer elements*/
+		.wrapper{
+			max-width: 960px;
+			margin: auto;
+		}
+
+	.name{
+		background-color: #008dd2;
+		color: #ffffff;
+		padding: 1.75%;
+		margin-left: 2%;
+		margin-top: .5%;
+	}
+
+	/*main body background and border*/
+		.main{
+			background-image: url(../images/gray.png);
+			border-bottom-width: 6px;
+			border-color: #008dd2;
+			border-style: solid;
+			/*flex:1;*/
+			height: 100%;
+		}
+
+
+	/*wrapper for all contect exclusivce from body, .main, and footer elements.*/
+		.flexbox{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		header .flexbox{
+			align-items: baseline;
+		}
+
+		.main .flexbox{
+			align-items: flex-start;
+		}
+
+	/*wrapper for main body right column for all pages*/
+		#connect{
+			width: 270px;
+			padding: 2%;
+		}
+
+	/*connection buttons*/
+		/*Display inline implementation icons in one row but not centered*/
+		#connect ul li{
+			/*display: inline-block;*/
+		}
+
+		/*Flexbox implementation allows the space to be distributed evenly*/
+		#connect ul{
+			display: flex;
+			justify-content: space-around;
+		}
+
+	/*wrapper for main body left column for all pages*/
+		.mainleft{
+			width: 650px;
+			padding: 3%;
+		}
+
+	#copyright{
+	 color: #ffffff;
+	 text-align: center;
+	 font-size: .75em;
+	}
+
+/*applies to multiple attributes*/
+
+	h1, h2, h3{
+		font-weight: bold;
+		font-family: "Georgia", Times, "Times New Roman", serif;
+	}
+
+	h2, h3{
+		color:#008dd2;
+	}
+
+	.mainleft, #connect{
+		background-color: #ffffff;
+		border-width: 2px;
+		border-style: solid;
+		border-color: #dddddd;
+		margin: 2%;
+	}
+
+/*Unique on each page */
+/*index.html*/
+
+	/*Float image to left of text*/
+	#aboutme img{
+		float: left;
+		padding-right: 10px;
+	}	
+
+/*contact.html*/
+
+	/*Styling of text entering fields.*/
+	input[type=text], input[type=email], textarea{
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		margin-top: 6px;
+		margin-bottom: 16px;
+		resize: vertical;
+	}
+
+	/*Style and color of submission button.*/
+	input[type=submit]{
+		background-color: #008dd2;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	/*Change color when hover over button.*/
+	input[type=submit]:hover{
+		background-color: #0060a0; 
+	}
+
+	#contactme{
+		border-radius: 5px;
+		background-color: #ffffff;
+		/*padding: 20px;*/
+	}
+
+/*portfolio.html*/
+	#flexprojects{
+		display: flex;
+		flex-wrap: wrap;
+		/*justify-content: space-around;*/
+		}
+
+	.floatedimg{
+		position: relative;
+		margin: 2%;
+	/*	display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+		-webkit-align-content: stretch;
+		align-content: stretch;*/
+	}
+
+	.floatedimg p{
+		position: absolute;
+		left: 0px;
+		bottom: 15%;
+		background-color: #008dd2;
+		color: #ffffff;
+		text-align: center;
+		font-size: 1.5em;
+		padding-bottom: 2%;
+		padding-top: 2%;
+		width: 100%;
+
+	}
