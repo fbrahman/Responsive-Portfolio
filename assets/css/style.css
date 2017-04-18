@@ -239,3 +239,34 @@
 		width: 100%;
 
 	}
+
+	/*Media Queries for responsive design*/
+
+	@media  screen and (max-width: 640px){
+		.name{
+			color: yellow;
+		}
+		
+	}
+
+	@media  screen and (max-width: 768px) and (min-width: 641px){
+		.name{
+			color: green;
+		}
+		
+	}
+
+	@media  screen and (max-width: 980px) and (min-width: 769px){
+		.name{
+			color: red;
+		}
+		
+	}
+
+
+
+
+
+
+
+
