@@ -208,22 +208,11 @@
 	#flexprojects{
 		display: flex;
 		flex-wrap: wrap;
-		/*justify-content: space-around;*/
 		}
 
 	.floatedimg{
 		position: relative;
 		margin: 2%;
-	/*	display: -webkit-flex;
-		display: flex;
-		-webkit-align-items: center;
-		align-items: center;
-		-webkit-justify-content: center;
-		justify-content: center;
-		-webkit-flex-flow: column wrap;
-		flex-flow: column wrap;
-		-webkit-align-content: stretch;
-		align-content: stretch;*/
 	}
 
 	.floatedimg p{
@@ -294,27 +283,40 @@
 		.main #connect{
 			width: 91%;
 		}
+
+
+	/*portofolio*/
+		#flexprojects{
+			justify-content: space-around;
+		
+		}
 		
 	}
+
 
 	@media  screen and (max-width: 768px) and (min-width: 641px){
 		.name{
 			/*color: green;*/
 			margin-top: 0;
 		}
-
+	
+	/*main content area reformatting including connect section*/
 		.main .flexbox{
 			flex-direction: column;
 		}
 
 		.main .flexbox .mainleft{
-			/*flex-basis: 100%
-			flex:1;*/
 			width: auto;
 		}
 
 		.main #connect{
 			width: 91%;
+		}
+
+	/*portofolio*/
+		#flexprojects{
+			justify-content: space-around;
+
 		}
 
 
@@ -337,6 +339,19 @@
 		
 		.flexbox .mainleft{
 			width: 420px;
+		}
+
+		/*portofolio*/
+		#flexprojects{
+			justify-content: space-around;
+		}
+
+		.floatedimg{
+			width: 100%;
+		}
+
+		.floatedimg img{
+			width: 100%;
 		}
 	}
 
