@@ -243,29 +243,78 @@
 	/*Media Queries for responsive design*/
 
 	@media  screen and (max-width: 640px){
+		
+	/*header sectin reformatting including name and nav bar*/
 		.name{
-			color: yellow;
+			/*color: yellow;*/
+			width: 100%;
+			margin: 0;
+			text-align: center;
+			padding: 3%;
+		}
+
+		header .flexbox{
+			flex-direction: column;
+		}
+
+		header nav{
+			margin: 0;
+			width: 100%;
+			padding: 2%;
+			text-align: center;
+		}
+		header nav li{
+			width: 31%;
+		}
+
+		header nav ul li:not(:first-child):before {
+		    content: " ";
+		}
+
+
+	/*main content area reformatting including connect section*/
+		.main .flexbox{
+			flex-direction: column;
+			/*overflow: hidden;*/
+		}
+
+		.main .flexbox .mainleft{
+			width: auto;
+		}
+
+		#aboutme img{
+			float: none;
+			width:100%;
+		}
+
+		#aboutme p{
+			padding-top: 1%;
+		}
+
+		.main #connect{
+			width: 91%;
 		}
 		
 	}
 
 	@media  screen and (max-width: 768px) and (min-width: 641px){
 		.name{
-			color: green;
+			/*color: green;*/
+			margin-top: 0;
 		}
-		
+
 		.main .flexbox{
 			flex-direction: column;
 		}
 
 		.main .flexbox .mainleft{
-			flex:1;
-			width: 420px;
+			/*flex-basis: 100%
+			flex:1;*/
+			width: auto;
 		}
 
-		.main .flexbox .connect{
-			flex: 1;
-			width: 100%
+		.main #connect{
+			width: 91%;
 		}
 
 
@@ -273,7 +322,17 @@
 
 	@media  screen and (max-width: 980px) and (min-width: 769px){
 		.name{
-			color: red;
+			/*color: red;*/
+			margin-top: 0;
+		}
+
+		#aboutme img{
+			float: none;
+			width:100%;
+		}
+
+		#aboutme p{
+			padding-top: 1%;
 		}
 		
 		.flexbox .mainleft{
