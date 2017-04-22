@@ -231,7 +231,73 @@
 
 	/*Media Queries for responsive design*/
 
-	@media  screen and (max-width: 640px){
+	@media  screen and (max-width: 625px){
+	/*header sectin reformatting including name and nav bar*/
+		.name{
+			/*color: yellow;*/
+			width: 100%;
+			margin: 0;
+			text-align: center;
+			padding: 3%;
+		}
+
+		header .flexbox{
+			flex-direction: column;
+		}
+
+		header nav{
+			margin: 0;
+			width: 100%;
+			padding: 2%;
+			text-align: center;
+		}
+		header nav li{
+			width: 31%;
+		}
+
+		header nav ul li:not(:first-child):before {
+		    content: " ";
+		}
+
+
+	/*main content area reformatting including connect section*/
+		.main .flexbox{
+			flex-direction: column;
+			/*overflow: hidden;*/
+		}
+
+		.main .flexbox .mainleft{
+			width: auto;
+		}
+
+		#aboutme img{
+			float: none;
+			width:100%;
+		}
+
+		#aboutme p{
+			padding-top: 1%;
+		}
+
+		.main #connect{
+			width: 91%;
+		}
+
+		/*portofolio*/
+		#flexprojects{
+			justify-content: space-around;
+		}
+
+		.floatedimg{
+			width: 100%;
+		}
+
+		.floatedimg img{
+			width: 100%;
+		}
+	}
+
+	@media  screen and (max-width: 640px) and (min-width: 626px){
 		
 	/*header sectin reformatting including name and nav bar*/
 		.name{
