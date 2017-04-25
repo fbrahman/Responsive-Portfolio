@@ -1,10 +1,14 @@
 /* common on all pages */
 	/*Setting up default font styling and text colour.*/
+	html{
+		height: 100%;
+	}
 	body{
 		font-family: "Arial", "helvitica Neue", Helvetica, sans-serif;
 		color: #777777;
 		display: flex;
 		flex-direction: column;
+		min-height: 100%;
 	}
 
 	header{
@@ -92,7 +96,7 @@
 			border-bottom-width: 6px;
 			border-color: #008dd2;
 			border-style: solid;
-			/*flex:1;*/
+			flex:1;
 			height: 100%;
 		}
 
